@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/homepage"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/gecimderdi" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:drawableLeft="@drawable/username"
+        android:hint=" Kullanici Adi" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-76dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/password"
+        android:hint=" Sifre" />
+
+    <Button
+        android:id="@+id/uyeol"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/homepage"
+        android:layout_below="@+id/password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="220dp"
+        android:text="Uye Ol"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/girisyap"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/homepage"
+        android:layout_below="@+id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-190dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="71dp"
+        android:layout_toEndOf="@+id/uyeol"
+        android:text="Giris"
+        android:textSize="18sp" />
+
+</RelativeLayout>
